@@ -14,7 +14,7 @@ const postsQuery = `{
           date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
           category
         }
-        excerpt(pruneLenght: 5000)
+        excerpt(pruneLength: 5000)
       }
     }
   }

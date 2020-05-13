@@ -14,13 +14,13 @@ function MenuBar() {
   const [display, setDisplay] = useState(null)
 
   const isDarkMode = theme === "dark"
-  const isListMode = theme === "list"
+  const isListMode = display === "list"
 
   useEffect(() => {
     setTheme(window.__theme)
     setDisplay(window.__display)
     window.__onThemeChange = () => setTheme(window.__theme)
-    window.__onDisplayChange = () => setTheme(window.__display)
+    window.__onDisplayChange = () => setDisplay(window.__display)
   }, [])
 
   return (

@@ -7,6 +7,8 @@ import { LightBulb as Light } from "@styled-icons/entypo/LightBulb"
 import { Grid } from "@styled-icons/boxicons-solid/Grid"
 import { ThList as List } from "@styled-icons/typicons/ThList"
 
+import getThemeColor from '../../utils/getThemeColor'
+
 import * as S from "./styles"
 
 function MenuBar() {
@@ -26,12 +28,12 @@ function MenuBar() {
   return (
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
-        <S.MenuBarLink cover direction="right" bg="#16202c" duration={0.6} to="/" title="Voltar para a Home">
+        <S.MenuBarLink cover direction="right" bg={getThemeColor()} duration={0.6} to="/" title="Voltar para a Home">
           <S.MenuBarItem>
             <Home />
           </S.MenuBarItem>
         </S.MenuBarLink>
-        <S.MenuBarLink cover direction="right" bg="#16202c" duration={0.6} to="/search/" title="Pesquisar">
+        <S.MenuBarLink cover direction="right" bg={getThemeColor()} duration={0.6} to="/search/" title="Pesquisar">
           <S.MenuBarItem>
             <Search />
           </S.MenuBarItem>

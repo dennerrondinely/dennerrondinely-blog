@@ -1,11 +1,19 @@
 import React from "react"
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 
 import * as S from "./styles"
 
-function PostItem({ slug, category, date, timeToRead, title, description, background }) {
+function PostItem({
+  slug,
+  category,
+  date,
+  timeToRead,
+  title,
+  description,
+  background,
+}) {
   return (
-    <S.PostItemLink to={slug}>
+    <S.PostItemLink cover direction="left" bg="#16202c" duration={0.6} to={slug}>
       <S.PostItemWrapper>
         <S.PostItemTag background={background}>{category}</S.PostItemTag>
         <S.PostItemInfo>

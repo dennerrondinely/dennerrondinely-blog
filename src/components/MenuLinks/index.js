@@ -10,7 +10,15 @@ function MenuLinks() {
       <S.MenuLinksList>
         {links.map(({ label, url }) => (
           <S.MenuLinksItem key={label}>
-            <S.MenuLinksLink to={url}>{label}</S.MenuLinksLink>
+            <S.MenuLinksLink
+              cover
+              direction="left"
+              bg="#16202c"
+              duration={0.6}
+              to={url}
+            >
+              {label}
+            </S.MenuLinksLink>
           </S.MenuLinksItem>
         ))}
       </S.MenuLinksList>

@@ -1,6 +1,6 @@
 require("dotenv").config()
 
-const queries = require("./src/utils/algolia_queries")
+const queries = require(`./src/utils/algolia_queries`)
 
 module.exports = {
   siteMetadata: {
@@ -8,10 +8,10 @@ module.exports = {
     position: `Desenvolvedor Front-end`,
     description: `A blog about frontend development and other cool staff.`,
     author: `@dennerrondinely`,
-    siteUrl: `https://dennerrondinely.com.br`
+    siteUrl: `https://dennerrondinely.com.br`,
   },
   plugins: [
-    'gatsby-plugin-transition-link',
+    "gatsby-plugin-transition-link",
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
@@ -40,20 +40,20 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-relative-images",
+            resolve: `gatsby-remark-relative-images`,
             options: {
-              name: "uploads",
+              name: `uploads`,
             },
           },
           {
-            resolve: "gatsby-remark-images",
+            resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 960,
               linkImagesToOriginal: false,
             },
           },
-          "gatsby-remark-lazy-load",
-          "gatsby-remark-prismjs",
+          `gatsby-remark-lazy-load`,
+          `gatsby-remark-prismjs`,
         ],
       },
     },
@@ -82,6 +82,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

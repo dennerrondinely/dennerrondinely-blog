@@ -2,8 +2,6 @@ require("dotenv").config()
 
 const queries = require(`./src/utils/algolia_queries`)
 
-const getThemeColor = require('./src/utils/themeColorConfig')
-
 module.exports = {
   siteMetadata: {
     title: `Dênner Rondinely`,
@@ -78,8 +76,8 @@ module.exports = {
         name: `Dênner Rondinely`,
         short_name: `Dênner`,
         start_url: `/`,
-        background_color: getThemeColor(),
-        theme_color: getThemeColor(),
+        background_color: `#16202c`,
+        theme_color: `#16202c`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },

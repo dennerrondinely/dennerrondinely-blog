@@ -79,7 +79,7 @@ module.exports = {
         background_color: `#16202c`,
         theme_color: `#16202c`,
         display: `fullscreen`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `static/assets/img/denner-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sitemap`,

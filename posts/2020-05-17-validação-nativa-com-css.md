@@ -11,3 +11,9 @@ A validação do formulário é feita na maioria das vezes com HTML nativo ou co
 Durante o desenvolvimento de um formulário de cadastro para uma aplicação onde eu trabalho, me deparei com necessidade de informar ao usuário que o campo era invalido e para isso sem inserir um elemento html novo na tela e sem escrever mais javascript, foi então que que fui buscar um solução via CSS.
 
 # O seletor :invalid
+
+```
+.form__input:invalid {
+  border-bottom: 3px solid #7159c198
+}
+```

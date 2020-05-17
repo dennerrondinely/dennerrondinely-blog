@@ -12,7 +12,7 @@ Durante o desenvolvimento de um formulário de cadastro para uma aplicação ond
 
 # O seletor :invalid
 
-```
+```css
 .form__input:invalid {
   border-bottom: 3px solid #7159c198
 }

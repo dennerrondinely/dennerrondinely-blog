@@ -14,6 +14,6 @@ Durante o desenvolvimento de um formulário de cadastro para uma aplicação ond
 
 ```css
 .form__input:invalid {
-  border-bottom: 3px solid #7159c198
+  border-bottom: 3px solid #7159c198;
 }
 ```

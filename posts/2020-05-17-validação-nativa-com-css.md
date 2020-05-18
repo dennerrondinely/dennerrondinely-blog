@@ -12,6 +12,8 @@ Durante o desenvolvimento de um formulário de cadastro para uma aplicação ond
 
 # O seletor :invalid
 
+O seletor :invalid é um poderoso seletor para podermos alterar estilos do nosso input quando esse estiver com dados inválidos. Ele irá ativar quando algum atributo do seu input for invalido 
+
 ```css
 .form__input:invalid {
   border-bottom: 3px solid #7159c198;
